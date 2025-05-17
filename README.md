@@ -15,8 +15,20 @@
 
 ---
 
-## 📚 Course Overview
+## 📝 Table of Contents
 
+- 📚 [Course Overview](#-course-overview)
+- 🧠 [Key Topics](#-key-topics)
+- 📂 [Repository Structure](#-repository-structure)
+- ⚙️ [Development Environment](#%EF%B8%8F-development-environment-planned-via-nix)
+- 📦 [Data Usage](#-data-usage)
+- 🏁 [Final Project](#-final-project)
+- 🖥️ [Tmux](#%EF%B8%8F-tmux)
+- 📜 [License](#-license)
+
+---
+
+## 📚 Course Overview
 * **Type:** Foundational Certificate Program
 * **Duration:** 3 Months
 * **Lectures:** 20 (40 hours total)
@@ -29,6 +41,8 @@
 * Hands-on coding (Google Colab, Jupyter)
 * Individual and group assignments
 * Final project presentation
+
+> *⚠️ Note*: Tasks and instructions are in Georgian to reflect the local context of the course.
 
 ---
 
@@ -67,18 +81,21 @@
 
 ```ruby
 introduction-to-ai/
-├── flake.nix              # Development environment config
-├── README.md              # Project overview
-├── task-1/                
-├── task-2/
-├── task-3/
-├── task-4/
-├── task-5/
+├── .git/                  # Git version control
+├── .gitignore             # Git ignore rules
+├── assets/                # Icons, banners, visuals
+├── flake.lock             # Nix flake lock file
+├── flake.nix              # Nix flake environment config
+├── requirements.txt       # Python dependencies (alt to flake)
+├── README.md              # Project documentation
+├── task-1/                # Task: AI application overview
+├── task-2/                # Task: Decision tree & recommender systems
+├── task-3/                # Task: Real-world AI project planning
+├── task-4/                # Task: Python & data exercises
+├── tmux.sh                # Shell script for tmux-based workspace setup
 ```
 
 > 🗒️ *Each folder contains Markdown instructions (`task.md`) written in **Georgian** to reflect the local context of the course.*
-
-If the project is intended for an international audience or GitHub portfolio use, it is recommended to include English translations or summaries for broader accessibility.
 
 ---
 
@@ -117,6 +134,26 @@ The program culminates in a capstone AI project, where students apply acquired k
 * Data sourcing and processing
 * Visualizations and evaluation metrics
 * Live or slide-based presentation
+
+---
+
+
+## 🖥️ Tmux
+
+The tmux.sh script sets up a custom tmux session for an organized development environment. It creates a tmux session named "Introduction-To-AI", splits the terminal window into multiple panes for different tasks, and launches relevant programs in each pane. This setup allows the user to code, track tasks, compile and run a programs simultaneously in a single terminal session.
+
+Layout:
+```bash
+ _________________________________
+|                     |           |
+|         CODE        |           |
+|         NVIM        |   TASKS   |
+|                     |   NVIM    |
+|_____________________|           |
+|                     |           |
+|       CONSOLE       |           |
+|_____________________|___________|
+```
 
 ---
 
