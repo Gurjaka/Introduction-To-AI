@@ -88,10 +88,10 @@ introduction-to-ai/
 ├── flake.nix              # Nix flake environment config
 ├── requirements.txt       # Python dependencies (alt to flake)
 ├── README.md              # Project documentation
-├── task-1/                # Task: AI application overview
-├── task-2/                # Task: Decision tree & recommender systems
-├── task-3/                # Task: Real-world AI project planning
-├── task-4/                # Task: Python & data exercises
+├── module-1/              # Introduction to Artificial Intelligence
+├── module-2/              # Programming with Python for AI
+├── module-3/              # Natural Language Processing (NLP)
+├── module-4/              # Computer Vision
 ├── tmux.sh                # Shell script for tmux-based workspace setup
 ```
 
